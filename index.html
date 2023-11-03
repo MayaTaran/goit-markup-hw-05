@@ -468,21 +468,33 @@
       </div>
     </footer>
 
-    <div class="over-window-container">
-      <form class="form-for-contact">
-        <svg class="icon" width="24" height="24">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-        <p>Leave your contacts and we will call you back</p>
-        <ul>
-          <li><input type="text" /></li>
-          <li><input type="text" /></li>
-          <li><input type="text" /></li>
-          <li><input type="text" /></li>
-        </ul>
-        <input type="checkbox" />
-        <button type="submit"></button>
+    <div class="backdrope is-open">
+      <div class="modal">
+        <button class="button-close" type="button" area-label="close button"><svg class="icon-close"  width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        
+        <form class="modal-window-input">
+          <div class="input-field">
+            <label class="label-input-item" for="input-item-name" >Name</label>
+          <input class="input-item" type="text" id="input-item-name" name="user_first_name" required pattern="[a-zA-Zа-яА-ЯіІЇїєЄ'йЙ]+" title="Mariya"/>
+         </div>
+          <div class="input-field">
+            <label class="label-input-item" for="input-item-phone">Phone</label>
+          <input class="input-item" type="tel" id="input-item-phone" name="user_phone_number" required pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" title="xxx-xxx-xx-xx"/></div>
+          <div class="input-field">
+            <label class="label-input-item" for="input-item-email">Email</label>
+          <input class="input-item" type="email" id="input-item-email" name="user_email" required  title="email@mail.com"/></div>
+          <div class="input-field">
+            <label class="label-input-item" for="input-item-comment">Comment</label>
+          <textarea class="modal-window-area" name="user-comment" id="input-item-comment"  placeholder="Text input"></textarea></div>
+          <div>
+<input type="checkbox" />
+<label >I accept the terms and conditions of the <a href=""> Privacy Policy</a></label>
+          </div>
+                  
+        <button class="modal-window-button" type="submit">Send</button>
       </form>
-    </div>
   </body>
 </html>
