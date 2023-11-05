@@ -467,10 +467,21 @@
         </div>
         <div class="subscribe-block">
           <p class="subscribe-text">Subscribe</p>
-          <input class="subscribe-input" type="email" placeholder="E-mail" />
-        </div>
-        <div>
-          <button class="subscribe-button">Subscribe</button>
+          <form class="footer-subscribe-form">
+            <label class="footer-input-label">
+              <input
+                class="subscribe-input"
+                name="email_for_subscribe"
+                type="email"
+                placeholder="E-mail"
+            /></label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="icon-telegramm" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegramm"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
